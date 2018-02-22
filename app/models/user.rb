@@ -7,13 +7,15 @@ class User < ApplicationRecord
 
   def self.from_omniauth(auth)
     user = User.where(uid: auth.uid, provider: auth.provider).first
+
     unless user
       user = User.create(
         uid: auth.uid,
         provider: auth.provider,
         email: User.dummy_email(auth),
+        password: "123456",
         image: auth.info.image,
-        name: auth.info.name,
+        username: auth.info.username,
         nickname: auth.info.nickname
         )
     end

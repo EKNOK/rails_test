@@ -4,7 +4,7 @@
 # rails devise 2th test
 ### reference
 [Qiita](https://qiita.com/cigalecigales/items/f4274088f20832252374)  
-[Techacademy](https://techacademy.jp/magazine/7336)
+[Techacademy](https://techacademy.jp/magazine/7336)  
 [twitterログイン](http://freesworder.net/rails-twitter/)
 
 ### version

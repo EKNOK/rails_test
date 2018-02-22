@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
   <ul>
     <li><%= current_user.email %></li>
-    <li><%= current_user.name %></li>
+    <li><%= current_user.username %></li>
     <li><%= current_user.nickname %></li>
     <li><%= current_user.image %></li>
     <li><%= link_to "ログアウト", destroy_user_session_path, method: 'delete' %></li>
